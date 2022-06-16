@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM!</title>
+    <style>
+        div#aria{
+            font: normal 1.5em arial;
+            background-color: rgb(86, 252, 86);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="aria" onclick="clicar()">
+        interaja...
+    </div>
+
+    <script>
+     function clicar()
+     {
+        var ari= window.document.getElementById ('aria')
+        ari.innerText = ('voce clicou')
+     }
+
+    </script>
+</body>
+</html>
