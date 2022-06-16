@@ -19,17 +19,19 @@
     </style>
 </head>
 <body>
-    <div id="aria" onclick="clicar()">
+    <div id="aria" onclick="clicar()" onmousemove="entrar()">
         interaja...
     </div>
 
     <script>
+        var ari= window.document.getElementById ('aria')
      function clicar()
      {
-        var ari= window.document.getElementById ('aria')
-        ari.innerText = ('voce clicou')
+        ari.innerText = ('Você clicou')
      }
-
+     function entrar(){
+        
+     }
     </script>
 </body>
 </html>
