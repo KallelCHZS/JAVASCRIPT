@@ -19,21 +19,27 @@
     </style>
 </head>
 <body>
-    <div id="aria" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+    <div id="aria">
         interaja...
     </div>
 
     <script>
-        var ari= window.document.getElementById ('aria')
-     function clicar()
+        var ari= window.document.getElementById('aria')
+        ari.addEventListener('click',clicar)
+        ari.addEventListener('mouseenter',entrar)
+        ari.addEventListener('mouseout',saiu)
+        
+        function clicar()
      {
         ari.innerText = ('Você clicou')
         ari.style.background='red'
      }
-     function entrar(){
+     function entrar()
+     {
         ari.innerText=('Entrou')
      }
-     function saiu(){
+     function saiu()
+     {
         ari.innerText=('Saiu')
         ari.style.background='rgb(86, 252, 86)'
      }
