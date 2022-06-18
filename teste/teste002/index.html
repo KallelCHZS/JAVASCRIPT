@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pais que esta morando</title>
+    <title>Pais</title>
 </head>
 <body>
-    <h1>Qual pais você esta!</h1>
-    <p>Nome do Pais <input type="text" name="ps" id="ps"> <input type="button" value="Verificar" onclick="botao()"></p>
-    <div id="nd"></div>
+    <h1>Você e Brasileiro ou esterangeiro</h1>
+    <p>
+        Pais de origem 
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="botao()">
+        <div id="resposta"></div>
+    </p>
     <script>
         function botao()
         {
-        var ps = document.getElementById('ps')
-        var nd = document.getElementById('nd')
-        nd.innerHTML = (`<p> Você esta no ${ps} ele um pais! </p>`)
+            var pais = document.getElementById('pais')
+            var res = document.getElementById('resposta')
+            res.innerHTML = (`Você é de(a) ${pais.value} `)   
+            if (pais.value == 'Brasil')
+            {
+                resposta.innerHTML += ('<p><strong>Você é Brasileiro!</strong></P>')
+            }
+            else
+            {
+                resposta.innerHTML += ('<p><strong>Você é estrangeiro! </strong></p>')
+            }
         }
     </script>
 </body>
