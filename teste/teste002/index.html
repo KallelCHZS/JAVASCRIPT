@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais que esta morando</title>
+</head>
+<body>
+    <h1>Qual pais você esta!</h1>
+    <p>Nome do Pais <input type="text" name="ps" id="ps"> <input type="button" value="Verificar" onclick="botao()"></p>
+    <div id="nd"></div>
+    <script>
+        function botao()
+        {
+        var ps = document.getElementById('ps')
+        var nd = document.getElementById('nd')
+        nd.innerHTML = (`<p> Você esta no ${ps} ele um pais! </p>`)
+        }
+    </script>
+</body>
+</html>
