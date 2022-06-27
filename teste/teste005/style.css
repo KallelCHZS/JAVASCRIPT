@@ -6,24 +6,20 @@ body{
 header{
    text-align: center;
 }
-input#txtn{
-    width: 40px;
-}
-select{
-    text-align: justify;
-    width: 70%;
-}
 div{
-    text-align: center;
     position: relative;
     top: 20%;
+    text-align: center;
+}input#txtn{
+    width: 70px;
 }
 section{
-    text-align: center;
+    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.5);
     background-color: white;
     padding: 15px;
     width: 40vw;
     border-radius: 10px;
+    text-align: center;
     margin: auto;
 }
 footer {
